@@ -7,7 +7,6 @@ import {
     Spacer,
     Text,
     ModalBody,
-    Button,
     VStack,
 
 } from "@chakra-ui/react"
@@ -20,6 +19,7 @@ import { CoinbaseWalletConnector, useEthers } from "@usedapp/core";
 import { TanenbaumChain } from "blockchain/NevmRolluxBridge/config/chainsUseDapp";
 import { PaliWalletConnector } from "blockchain/NevmRolluxBridge/walletConnectors/PaliWalletConnector";
 import { ConnectWalletButton } from "../Components/ConnectWalletButton";
+import { OpenBitWalletConnector } from "blockchain/NevmRolluxBridge/walletConnectors/OpenBitConnector";
 
 export type ConnectWalletBlockProps = {
     setScreen: (value: string) => void;
@@ -115,6 +115,14 @@ export const ConnectWalletBlock: FC<ConnectWalletBlockProps> = ({ setScreen, onC
                             ));
                         }
                         )
+                    }}
+                />
+                <ConnectWalletButton
+                    label={'OpenBit Wallet'}
+                    logoPath={'/wallets/openbit.png'}
+                    onClick={() => {
+                        onClose();
+                        activate(new OpenBitWalletConnector());
                     }}
                 />
             </VStack>
