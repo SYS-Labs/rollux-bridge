@@ -9,6 +9,8 @@ import {
     ModalBody,
     Button,
     VStack,
+    Box,
+    Icon,
 
 } from "@chakra-ui/react"
 
@@ -42,6 +44,24 @@ export const ConnectWalletBlock: FC<ConnectWalletBlockProps> = ({ setScreen, onC
         <Divider />
         <ModalBody>
             <VStack spacing={1} justifyContent={'left'}>
+                <Box w={'100'} textAlign={'center'}
+                    sx={
+                        {
+                            backgroundColor: 'gray.100',
+                            borderRadius: '8px',
+                            border: '1px solid #E2E8F0',
+                            padding: '8px',
+                        }
+                    }
+                >
+                    <HStack>
+                        <Icon as={QuestionIcon} />
+                        <Text textAlign={'center'} size='sm' fontSize={'12px'}>
+                            {'Before use Pali wallet connector please switch your network mode to EVM chain to prevent app crash.'}
+                        </Text>
+                    </HStack>
+
+                </Box>
                 <ConnectWalletButton
                     label={'Pali Wallet'}
                     logoPath={'/wallets/Pali.svg'}
