@@ -42,7 +42,7 @@
     "web3-core": "^4.0.2"
   },
   "devDependencies": {
-    "@types/lodash": "4.14.74",
+    "@types/lodash": "latest",
     "@types/lodash.mergewith": "latest",
     "@types/node": "17.0.32",
     "@types/react": "18.0.9",
@@ -50,6 +50,6 @@
     "eslint": "8.15.0",
     "eslint-config-next": "12.1.6",
     "firebase-tools": "^11.0.1",
-    "typescript": "4.6.4"
+    "typescript": "latest"
   }
 }
