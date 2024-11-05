@@ -212,7 +212,7 @@ export class PaliWalletConnector implements Connector {
 
             if (typeof accounts[0] === 'string' && accounts[0].startsWith('sys')) {
                 await this.provider!.send(
-                    "sys_changeUTXOEVM",
+                    "eth_changeUTXOEVM",
                     [{ chainId: 57 }],
                 );
             }
