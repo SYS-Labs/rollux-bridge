@@ -164,7 +164,7 @@ export class PaliWalletConnector implements Connector {
 
 
                 await this.provider!.send(
-                    "eth_changeUTXOEVM",
+                    "sys_changeUTXOEVM",
                     [{ chainId: 57 }],
                 );
 
