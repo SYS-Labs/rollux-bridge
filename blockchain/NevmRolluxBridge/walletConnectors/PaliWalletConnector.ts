@@ -169,7 +169,15 @@ export class PaliWalletConnector implements Connector {
                 );
 
                 const chainId: string = await this.provider!.send('eth_chainId', [])
-                const accounts: string[] = await this.provider!.send('eth_requestAccounts', [])
+
+                let accounts: string[] = []
+
+                try {
+                    accounts = await this.provider!.send('eth_requestAccounts', [])
+
+                } catch (e: any) {
+                    console.log(e);
+                }
 
                 if (!accounts) {
                     throw new Error('Could not activate connector: no accounts');;
