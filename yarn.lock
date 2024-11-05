@@ -3062,6 +3062,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/lodash.mergewith@npm:latest":
+  version: 4.6.9
+  resolution: "@types/lodash.mergewith@npm:4.6.9"
+  dependencies:
+    "@types/lodash": "*"
+  checksum: c5a67e83040103decfd37090127118f5758773d0ce2a1756d442b371721737c7752f48f62544cc970f44abec8471f260cc4c844e1a4fdef8b76cb96bdec8a595
+  languageName: node
+  linkType: hard
+
 "@types/lodash@npm:*":
   version: 4.14.195
   resolution: "@types/lodash@npm:4.14.195"
@@ -11775,6 +11784,7 @@ __metadata:
     "@eth-optimism/sdk": 3.0.0
     "@reduxjs/toolkit": ^1.9.5
     "@types/lodash": 4.14.74
+    "@types/lodash.mergewith": latest
     "@types/node": 17.0.32
     "@types/react": 18.0.9
     "@types/react-dom": 18.0.3
