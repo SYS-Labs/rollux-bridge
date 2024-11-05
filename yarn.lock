@@ -3069,10 +3069,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/lodash@npm:^4.17.13":
-  version: 4.17.13
-  resolution: "@types/lodash@npm:4.17.13"
-  checksum: d0bf8fbd950be71946e0076b30fd40d492293baea75f05931b6b5b906fd62583708c6229abdb95b30205ad24ce1ed2f48bc9d419364f682320edd03405cc0c7e
+"@types/lodash@npm:4.14.74":
+  version: 4.14.74
+  resolution: "@types/lodash@npm:4.14.74"
+  checksum: 09b73837b707b45b0b03e746ab7c98212a15cadec64051e2aaf669e28e1d32a338d06d8b5edb4e1950c3148b0e0be682984b78c29a8a8390346f5d8cb8ee4200
   languageName: node
   linkType: hard
 
@@ -11774,7 +11774,7 @@ __metadata:
     "@emotion/styled": ^11.10.6
     "@eth-optimism/sdk": 3.0.0
     "@reduxjs/toolkit": ^1.9.5
-    "@types/lodash": ^4.17.13
+    "@types/lodash": 4.14.74
     "@types/node": 17.0.32
     "@types/react": 18.0.9
     "@types/react-dom": 18.0.3
