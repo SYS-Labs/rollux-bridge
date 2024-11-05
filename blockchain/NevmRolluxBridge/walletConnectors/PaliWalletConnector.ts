@@ -196,6 +196,8 @@ export class PaliWalletConnector implements Connector {
     }
 
     async activate(): Promise<void> {
+
+        console.log(`ACTIVATE`);
         await this.init()
 
         if (!this.provider) {
@@ -206,6 +208,14 @@ export class PaliWalletConnector implements Connector {
             const chainId: string = await this.provider!.send('eth_chainId', [])
             const accounts: string[] = await this.provider!.send('eth_requestAccounts', [])
 
+            console.log(accounts);
+
+            if (typeof accounts[0] === 'string' && accounts[0].startsWith('sys')) {
+                await this.provider!.send(
+                    "sys_changeUTXOEVM",
+                    [{ chainId: 57 }],
+                );
+            }
 
             // @ts-ignore
             if (accounts[0].success === false) {
