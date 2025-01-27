@@ -63,7 +63,7 @@ export const TanenbaumChain: Chain = {
         return address;
     },
     rpcUrl: "https://rpc.tanenbaum.io",
-    blockExplorerUrl: "https://tanenbaum.io",
+    blockExplorerUrl: "https://explorer.tanenbaum.io",
 }
 
 export const RolluxChain: Chain = {
