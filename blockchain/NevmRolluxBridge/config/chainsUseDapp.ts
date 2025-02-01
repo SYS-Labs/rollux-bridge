@@ -63,12 +63,12 @@ export const TanenbaumChain: Chain = {
         return address;
     },
     rpcUrl: "https://rpc.tanenbaum.io",
-    blockExplorerUrl: "https://tanenbaum.io",
+    blockExplorerUrl: "https://explorer.tanenbaum.io",
 }
 
 export const RolluxChain: Chain = {
     chainId: 57000,
-    chainName: "Rollux Bedrock Testnet",
+    chainName: "Rollux Zk Testnet",
     isLocalChain: false,
     isTestChain: true,
     nativeCurrency: {
@@ -84,7 +84,7 @@ export const RolluxChain: Chain = {
     getExplorerTransactionLink: (address: string) => {
         return address;
     },
-    rpcUrl: "https://rpc-tanenbaum.rollux.com/",
+    rpcUrl: "https://rpc0-test.rollux.com/",
     blockExplorerUrl: "https://rollux.tanenbaum.io",
 }
 

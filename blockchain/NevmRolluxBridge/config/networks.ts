@@ -55,14 +55,14 @@ export const networks: { [key: string]: NetworkData } = {
     L1Dev: {
         rpcAddress: 'https://rpc.tanenbaum.io',
         name: 'L1Dev',
-        explorerUrl: 'https://tanenbaum.io',
+        explorerUrl: 'https://explorer.tanenbaum.io',
         chainId: 5700,
         layer: 1,
         contracts: contractsDev.l1_dev,
     },
     L2Dev: {
-        rpcAddress: 'https://rpc-tanenbaum.rollux.com',
-        name: 'RolluxBedrockDev',
+        rpcAddress: 'https://rpc0-test.rollux.com/',
+        name: 'RolluxZkDev',
         explorerUrl: 'https://rollux.tanenbaum.io',
         chainId: 57000,
         layer: 2,
