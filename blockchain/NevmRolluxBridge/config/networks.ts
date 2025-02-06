@@ -12,8 +12,8 @@ export type NetworkData = {
 
 
 export const networksMap: { [key: string]: string } = {
-    'L1Dev': 'RolluxBedrockDev',
-    'RolluxBedrockDev': 'L1Dev',
+    'L1Dev': 'RolluxZkDev',
+    'RolluxZkDev': 'L1Dev',
     'L1': 'Rollux',
     'Rollux': 'L1',
 };
@@ -63,7 +63,7 @@ export const networks: { [key: string]: NetworkData } = {
     L2Dev: {
         rpcAddress: 'https://rpc0-test.rollux.com/',
         name: 'RolluxZkDev',
-        explorerUrl: 'https://rollux.tanenbaum.io',
+        explorerUrl: 'https://explorer-test.rollux.com',
         chainId: 57000,
         layer: 2,
         contracts: contractsDev.l2_dev,

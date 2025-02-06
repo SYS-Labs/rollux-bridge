@@ -131,68 +131,6 @@ export const BridgeNevmRollux: NextPage<BridgeNevmRolluxProps> = ({ }) => {
         return null;
     }
 
-    // const getCrossChainMessenger = useCallback(async (signer: ethers.providers.JsonRpcSigner | undefined, currentDisplay: CurrentDisplayView) => {
-    //     if (!signer) {
-    //         console.warn("No signer");
-    //         return undefined;
-    //     }
-
-    //     const currentChainId: number = await signer.getChainId();
-
-    //     // console.log(currentChainId);
-
-    //     const network: NetworkData | undefined = getNetworkByChainId(currentChainId, networks);
-
-    //     if (!network) {
-    //         console.warn("Can not detect network")
-    //         return undefined;
-    //     }
-
-    //     const netMap = networksMap[network.name] ?? undefined;
-    //     // console.log(network.name);
-
-    //     if (!netMap) {
-    //         console.warn("Cant not find net mapping")
-
-    //         return undefined;
-    //     }
-
-    //     const secondNetwork: NetworkData | undefined = getNetworkByName(netMap, networks);
-
-    //     if (!secondNetwork) {
-    //         console.warn("Failed to fetch second network by name");
-    //         return undefined;
-    //     }
-
-    //     const l1Contracts = network.layer === 1 ? network : secondNetwork;
-    //     const l2Contracts = secondNetwork.layer === 2 ? secondNetwork : network;
-
-
-    //     if (currentDisplay === CurrentDisplayView.deposit) {
-
-    //         return crossChainMessengerFactory(
-    //             l1Contracts,
-    //             l2Contracts,
-    //             signer,
-    //             new ethers.providers.JsonRpcProvider(secondNetwork?.rpcAddress),
-    //             true
-    //         )
-
-    //     }
-
-    //     // withdraw
-
-    //     return crossChainMessengerFactory(
-    //         l1Contracts,
-    //         l2Contracts,
-    //         new ethers.providers.JsonRpcProvider(rpcL1),
-    //         signer,
-    //         true
-    //     )
-
-
-    // }, [rpcL1]);
-
     const handleERC20Approval = async (l1Token: string, l2Token: string, amount: BigNumber) => {
         if (!library) {
             console.warn("approval:no-library")
@@ -858,14 +796,6 @@ export const BridgeNevmRollux: NextPage<BridgeNevmRolluxProps> = ({ }) => {
 
                                                                             return;
                                                                         }
-
-                                                                        // const messengerL1 = crossChainMessengerFactory(
-                                                                        //     networks.L1Dev,
-                                                                        //     networks.L2Dev,
-                                                                        //     signer,
-                                                                        //     new ethers.providers.JsonRpcProvider(rpcL2),
-                                                                        //     true
-                                                                        // );
 
                                                                         const messengerL1 = hookedMessenger;
 

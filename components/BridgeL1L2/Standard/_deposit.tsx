@@ -96,12 +96,10 @@ export const DepositPart: FC<DepositPartProps> = ({ onClickDepositButton, onClic
 
     useEffect(() => {
         if (parseFloat(amountToSwap) == 0) {
-            // console.warn('');
             return; // break here
         }
 
         if (!messenger) {
-            console.warn('No messenger');
             return; // break here
         }
 
@@ -109,8 +107,6 @@ export const DepositPart: FC<DepositPartProps> = ({ onClickDepositButton, onClic
             usdEstimate: undefined,
             weiEstimate: undefined
         })
-
-        // console.log(selectedTokenAddress, selectedTokenAddressL2, amountToSwap, selectedTokenDecimals)
 
         try {
 
