@@ -61,7 +61,7 @@ export const networks: { [key: string]: NetworkData } = {
         contracts: contractsDev.l1_dev,
     },
     L2Dev: {
-        rpcAddress: 'https://rpc0-test.rollux.com/',
+        rpcAddress: 'https://rpc-test.rollux.com/',
         name: 'RolluxZkDev',
         explorerUrl: 'https://explorer-test.rollux.com',
         chainId: 57000,
