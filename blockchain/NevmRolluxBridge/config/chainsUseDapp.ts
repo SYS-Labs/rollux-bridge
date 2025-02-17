@@ -63,12 +63,12 @@ export const TanenbaumChain: Chain = {
         return address;
     },
     rpcUrl: "https://rpc.tanenbaum.io",
-    blockExplorerUrl: "https://tanenbaum.io",
+    blockExplorerUrl: "https://explorer.tanenbaum.io",
 }
 
 export const RolluxChain: Chain = {
     chainId: 57000,
-    chainName: "Rollux Bedrock Testnet",
+    chainName: "Rollux Zk Testnet",
     isLocalChain: false,
     isTestChain: true,
     nativeCurrency: {
@@ -76,16 +76,16 @@ export const RolluxChain: Chain = {
         symbol: "TSYS",
         decimals: 18,
     },
-    multicallAddress: '0x1F359C32b5D8c9678b076eAac411A4d2Eb11E697',
-    multicall2Address: '0x1F359C32b5D8c9678b076eAac411A4d2Eb11E697',
+    multicallAddress: '0xcA11bde05977b3631167028862bE2a173976CA11',
+    multicall2Address: '0xcA11bde05977b3631167028862bE2a173976CA11',
     getExplorerAddressLink: (address: string) => {
         return address;
     },
     getExplorerTransactionLink: (address: string) => {
         return address;
     },
-    rpcUrl: "https://rpc-tanenbaum.rollux.com/",
-    blockExplorerUrl: "https://rollux.tanenbaum.io",
+    rpcUrl: "https://rpc-test.rollux.com/",
+    blockExplorerUrl: "https://explorer-test.rollux.com",
 }
 
 export const networks: { [key: string]: Chain } = {
