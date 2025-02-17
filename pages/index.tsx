@@ -798,10 +798,11 @@ export const BridgeNevmRollux: NextPage<BridgeNevmRolluxProps> = ({ }) => {
                                                                         }
 
                                                                         const messengerL1 = hookedMessenger;
-
+                                                                        console.log(`Using ${rpcL2} to get message payload (transaction)`)
                                                                         const _tx = await (new ethers.providers.JsonRpcProvider(rpcL2)).getTransaction(withdrawalModalData.txHash);
-
+                                                                        console.log(`Tx result from L2:` + JSON.stringify(_tx));
                                                                         const proveTx = await messengerL1.proveMessage(_tx);
+                                                                        console.log(`Prove tx result:` + JSON.stringify(proveTx));
 
                                                                         const tmpProven = [...proveTxns]
                                                                         tmpProven.push({ withdrawTx: withdrawalModalData.txHash, proveTx: proveTx.hash });
