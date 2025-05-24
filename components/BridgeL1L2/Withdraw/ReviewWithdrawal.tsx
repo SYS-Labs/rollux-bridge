@@ -108,7 +108,7 @@ export const ReviewWithdrawal: FC<ReviewWithdrawalProps> = ({
 
                         <ReviewWithdrawalStep
                             icon={MdSend}
-                            title={'Wait 7 days'}
+                            title={'Wait 2 hours'}
                         />
 
                         <ReviewWithdrawalStep
@@ -129,7 +129,7 @@ export const ReviewWithdrawal: FC<ReviewWithdrawalProps> = ({
                             }
                             }
                         >
-                            I understand it will take ~7 days until my funds are claimable at Syscoin NEVM.
+                            I understand it will take ~2 hours until my funds are claimable at Syscoin NEVM.
                         </Checkbox>
                     </HStack>
 
@@ -142,7 +142,7 @@ export const ReviewWithdrawal: FC<ReviewWithdrawalProps> = ({
                             }
                             }
                         >
-                            I understand the ~7 day withdrawal timer does not start until I prove my withdrawal.
+                            I understand the ~2 hours withdrawal timer does not start until I prove my withdrawal.
                         </Checkbox>
                     </HStack>
 

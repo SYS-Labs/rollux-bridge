@@ -30,7 +30,7 @@ Users can easily deposit tokens to L2 with low fees and high speed by clicking a
 
 ## Withdrawals
 
-Users can easily withdraw funds from L2 to L1, but this involves a waiting period of 7 days (the testnet is faster). There are already proposals in place for third-party providers to facilitate faster withdrawals.
+Users can easily withdraw funds from L2 to L1, but this involves a waiting period of 2 hours (the testnet is faster). There are already proposals in place for third-party providers to facilitate faster withdrawals.
 
 The full withdrawal process, which includes initiating, proving, and finalizing the withdrawal, is all covered by the bridge's user interface.
 

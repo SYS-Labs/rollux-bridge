@@ -812,7 +812,7 @@ export const BridgeNevmRollux: NextPage<BridgeNevmRolluxProps> = ({ }) => {
                                                 icon={<Icon as={MdOutlineShield} />}
                                                 description={
                                                     <>
-                                                        <Text fontSize={'sm'} color={'gray.400'}>This usually takes 7 days</Text>
+                                                        <Text fontSize={'sm'} color={'gray.400'}>This usually takes 2 hours</Text>
                                                         <Text fontSize={'sm'} color={'gray.400'}>Bridge any token to Syscoin NEVM</Text>
                                                     </>
                                                 }
